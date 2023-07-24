@@ -1,4 +1,4 @@
-
+// update custo price
 function customizedCost(customcategory,customprice){
     const CostBtn = document.getElementById(customcategory+'-cost-btn');
    
@@ -6,7 +6,7 @@ function customizedCost(customcategory,customprice){
     
     
 }
-
+// customized Cost part and total part
 function totalCost(){
     
       
@@ -21,21 +21,19 @@ total.innerText=totalPrice.innerText;
 return total.innerText;
 }
 
-
+// custoized button click part
 
 
 document.getElementById('memory-btn-2').addEventListener('click',function(){
     customizedCost('memory',180,'memory-btn-2'); 
     totalCost();
-    // const totalPrice =document.getElementById('total-price');
-    // totalPrice.innerText=e+1299;
+    
     
 })
 document.getElementById('memory-btn-1').addEventListener('click',function(){
     customizedCost('memory',0);
     totalCost();
-    // const totalPrice =document.getElementById('total-price');
-    // totalPrice.innerText=e+1299;
+    
 
 })
 document.getElementById('storage-btn-1').addEventListener('click',function(){
@@ -65,6 +63,7 @@ document.getElementById('delivery-btn-2').addEventListener('click',function(){
     
 })
 
+// 20% discount promocode verification part
 document.getElementById('apply').addEventListener('click',function(){
     const input=document.getElementById('input');
     const cost=totalCost();
